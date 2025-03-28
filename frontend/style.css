@@ -1,0 +1,360 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color:rgb(212, 212, 212);
+    color: white;
+    
+}
+
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(161, 9, 203, 0.775);
+}
+nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav a {
+    color: rgb(52, 52, 52);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+header nav a {
+    margin: 30 15px;
+    font-weight: 500;
+    font-size: 19px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #007bff;
+}
+.tryon-img {
+    width: 120px;  /* Adjust the size as needed */
+    height: auto;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.tryon-img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.menu-item .dropdown li a {
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.menu-item .dropdown li a:hover {
+    background-color: #f4f4f4;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+/* Hero Section */
+/*.video_bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#bg-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  
+
+}*/
+.hero {
+    
+    color:white;
+    text-align: center;
+    padding: 80px 20px;
+}
+.hero-content video{
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the video covers the entire screen */
+      z-index: -1; /* Places the video behind the text */
+
+}
+
+.hero-content h1 {
+    margin-top: 300px;
+    font-size: 50px;
+    
+}
+
+.hero-content p {
+    font-size: 30px;
+    margin: 10px 0 20px;
+}
+
+.cta-btn {
+    padding: 20px 50px;
+    background-color: white;
+    font-size: medium;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    position: relative;
+    top: 20px; /* Moves the button 20px down */
+}
+
+
+
+.cta-btn:hover {
+    background-color: rgb(212, 212, 212);
+    color: rgb(171, 30, 164);
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    background-color: rgb(212, 212, 212);
+    text-align: center;
+    position: relative;
+}
+
+.features h2{
+    margin-top: 0px;
+    color:  rgb(56, 56, 56);
+    font-size: 40px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.photos img{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+.feature h3{
+    color:  rgb(56, 56, 56);
+    font-size: 25px;
+
+}
+
+.features-grid {
+    color:  rgb(56, 56, 56);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.feature:hover{
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Add stronger shadow */
+}
+
+.feature {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Section */
+
+  .media-section h2{
+    color: black;
+  }
+  .media-section p{
+    color: #333;
+  }
+.media-section {
+    .steps-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        color: black; /* Ensures all text inside steps-container is white */
+    }
+    
+    .step {
+        background: rgb(56, 56, 56);
+        color: rgb(255, 253, 253); /* Text changed to white */
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        margin: 5px;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .step:hover {
+        background: rgb(92, 91, 92);
+        transform: scale(1.05);
+    }
+    
+    /* Ensure Upload Section Text is White */
+    .upload-container {
+        text-align: center;
+        margin-top: 30px;
+        color: white;
+    }
+    
+    #drop-area {
+        border: 2px dashed rgb(236, 206, 237);
+        padding: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        color: white; /* Ensures text inside drop area is white */
+    }
+    
+    #drop-area.highlight {
+        background-color: rgba(255, 102, 0, 0.1);
+    }
+    
+    /* Make File Upload Button Text White */
+    .custom-file-upload {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: black; /* Button text changed to white */
+        background: linear-gradient(45deg, rgb(236, 206, 237), rgb(233, 167, 236));
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .custom-file-upload:hover {
+        background: linear-gradient(45deg, rgb(205, 150, 208), rgb(184, 131, 186));
+    }
+    
+    /* Ensure Preview Section Text is White */
+    #preview-container {
+        margin-top: 20px;
+        display: none;
+        color: white;
+    }
+    
+    #preview-container img {
+        max-width: 100%;
+        max-height: 200px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    /* padding: 40px 20px;
+    background-color: rgb(235, 233, 233);
+    padding: 60px 20px;
+}
+.media-section img:hover{
+    transform: scale(1.05); /* Slight zoom-in effect */
+    /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); Add stronger shadow */
+}
+/* .media-section h2{
+    color:  rgb(212, 212, 212);
+    font-size: 40px;
+    text-align: center;
+}
+.media-section h3{
+    text-align: center; 
+}*/ 
+
+#videos h2{
+    color: black;
+    text-align: center;
+
+}
+.video-gallery {
+    display: flex;
+    justify-content: center; /* Centers videos horizontally */
+    align-items: center; /* Centers videos vertically if needed */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(212, 212, 212);
+}
+
+.video-gallery video {
+    width: 900px; /* Adjust width */
+    height: 500px; /* Adjust height */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer .social-media a {
+    margin: 0 5px;
+    color: #007bff;
+    font-size: 16px;
+}
+
+footer .social-media a:hover {
+    color: #0056b3;
+}

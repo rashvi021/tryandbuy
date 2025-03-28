@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Cart - StyleMeUp</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">StyleMeUp</a>
+    </header>
+    
+    <div class="cart-container">
+        <h1>Shopping Cart</h1>
+        <div class="cart-items"></div> 
+
+        <div class="cart-summary">
+            <h2>Total: $<span id="total-price">0.00</span></h2>
+            <!-- ✅ Changed class to ID for better JavaScript selection -->
+            <button id="try-on-btn">Proceed to Try-On</button>
+        </div>
+    </div>
+
+    <script src="cart.js"></script> <!-- ✅ Script at bottom for better loading -->
+</body>
+</html>
