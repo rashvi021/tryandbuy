@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const itemElement = document.createElement("div");
                 itemElement.classList.add("cart-item");
                 itemElement.innerHTML = `
-                    <p><strong>${item.name}</strong> - $${item.price} (Qty: <span id="qty-${item.productId}">${item.quantity}</span>)</p>
+                    <p><strong>${item.name}</strong> - ₹${item.price} (Qty: <span id="qty-${item.productId}">${item.quantity}</span>)</p>
                     <button class="decrease" data-id="${item.productId}">-</button>
                     <button class="increase" data-id="${item.productId}">+</button>
                     <button class="remove" data-id="${item.productId}">Remove</button>

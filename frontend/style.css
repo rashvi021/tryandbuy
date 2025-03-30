@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 15px;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -23,7 +23,7 @@ header {
 }
 
 header .logo {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     color: rgba(161, 9, 203, 0.775);
 }
